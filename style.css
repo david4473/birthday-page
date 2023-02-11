@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./assets/husky\ stash.ttf);
+}
+
+body{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.btn{
+    font-size: 16px;
+    padding: 15px;
+    width: 170px;
+    border: transparent;
+    border-radius: 7px;
+    background-color: #ff8ba7;
+    color: #33272a;
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.98);
+}
+
+.image{
+    width: 280px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    background-position: bottom;
+    background-size: cover;
+    box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3),
+    0px 10px 10px rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0% 0%, calc(100% - 0.8em) 0%, 100% 0.8em, 100% 100%, 0.8em 100%, 0% calc(100% - 0.8em));
+    border: 3px solid #ec6c3a;
+}
+
+img-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.giphy{
+    width: 180px;
+    position: absolute;
+    top: 350px;
+    left: 230px;
+    border-radius: 100%;
+}
+
+.giphy1 {
+    width: 180px;
+    position: absolute;
+    top: 200px;
+    right: 230px;
+    border-radius: 100%;
+}
+
+.giphy2 {
+    width: 180px;
+    position: absolute;
+    top: 400px;
+    right: 430px;
+    border-radius: 100%;
+}
+
+.giphy3 {
+    width: 180px;
+    position: absolute;
+    top: 40px;
+    left: 430px;
+    border-radius: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url(./assets/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .giphy3 {
+            width: 130px;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            border-radius: 100%;
+        }
+
+    .giphy2 {
+        width: 130px;
+        position: absolute;
+        top: 550px;
+        left: 230px;
+        border-radius: 100%;
+    }
+    
+    .giphy1 {
+        width: 130px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        border-radius: 100%;
+    }
+
+        .giphy {
+            width: 130px;
+            position: absolute;
+            top: 450px;
+            left: 0px;
+            border-radius: 100%;
+        }
+        
+}
